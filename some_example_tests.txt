@@ -1,0 +1,10 @@
+#example 1 (phone number)
+Final: vehicle 1 was keyed, named insured called Auto Damage Service Program (805)267-1759.  No answer, Unable to leave message due to voice mail box not set up.
+# example 2 (name, policy number) 
+Insured was backing out of driveway when she scraped the passenger side of the vehicle. Claim for policy 8HH9104 Reported by Robert Barns. 
+# example 3 (name, adddress, ssn, dln)
+Auto insurance applicant, Josie Williamson 399-64-5685 of 3519 Huber Ave Kenosha, WI, drivers license G252-1405-4391-01, drives a 2010 Ford Taurus with 58,010 miles and loan of $5600.
+# example 4 (multiple names,ccn)
+Named insured, Robert Oiler, notified agent Michael Armstrong, of discrepancy in billing of his premium in the amount of $500 on his Visa Card 4716752283808635 on May 13, 2015.
+# example 5 (same name x2, email)
+Agent filed fire claim for the insured Michael Hunt and his wife, Lindsay. Mr. & Mrs. Hunt requested that updates be sent to this email: huntfamily@gmail.com

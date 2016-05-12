@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>State Farm Anonymizer</title>
+	
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.form.js"></script> <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale1.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    
+<body>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-md-8 col-md-offset-2">-->
+					
+					<div class="input">
+                        <h4 class="brand-heading">Give me your dirty, your raw, your personally identifiable information...</h4>
+						<!--Feed me your dirty text, I like the really dirty stuff!-->
+						<form id=input>
+							<textarea  id=textInput>Enter any dirty text. James Madison tried to purchase insurance for 1600 Pennsylvania Ave using AmEx card 379126611909488. 
+							</textarea>
+							<br />
+							
+							<input class="btn btn-default btn-lg" type="submit" />
+						</form>
+						
+						<script> 
+
+
+// magic.js
+$(document).ready(function() { // Wait until the page is loaded
+
+    // process the form
+    $('form').submit(function(event) {
+
+        // get the form data
+        // there are many ways to get this data using jQuery (you can use the class or id also)
+		var dataString = $("#textInput").val();
+		$.post('http://127.0.0.1:8080/anon',dataString,function(dataString) {
+
+		$("#output").html(dataString) ;
+        
+        })
+            
+
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+    });
+});
+
+
+	</script>        
+                    </div>
+					
+                </div>
+           
+			</div>
+			
+        </div>
+    </header>
+<!--
+<div id="pagewidth">
+<div id="header"><h2>The Anonymizer</h2></div>
+<div id="wrapper" class="clearfix">
+<div id="maincol">
+-->
+<!--form action= "http://localhost:8080/anon" method="POST" -->
+
+<div id="output" class="container content-section text-center">
+<div class="row">
+
+			
+			
+			
+			Show me the scrubbed data.
+
+
+			</div>
+			</div>
+
+<!--
+>>>>>>> css1
+</div>
+</div>-->
+<!--
+ <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                
+				<div id ="footer">
+				Just output text
+				
+                </div>
+            </div>
+        </div>
+    </section>-->
+<!--
+	<p> 
+<div id="output">
+
+<p><div id="footer">Just a footer, use me, delete me, it's ok, I'm a footer.</div>
+</div>
+</p>
+-->
+    <footer>
+	
+        <div class="container text-center">
+		            
+                    
+                    
+                    <a href="grayscale.html" class="btn btn-default btn-lg">Return to Main Page</a>
+                <p> </p>
+			<p> </p>
+            <p>Copyright &copy; SF Anonymizer DSE 2015</p>
+        </div>
+    </footer>
+</body>
+
+</html>
