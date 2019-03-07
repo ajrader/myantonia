@@ -53,4 +53,4 @@ def get_rare_word_positions(text, words_series):
 if __name__ == "__main__":
     results = get_words("all_files.txt", 3)
     test_case = "William, whose cc number is 098170893741 is coming over to Jason's house who has a policy number aisod8f09a8oha and they will play Super Smash Bros. Kendall likes to write books. Milk is tasty. Mary likes Jack. We like Long and Hee and Smith and House"
-    print zip(get_word_counts(test_case, results), test_case.split())
+    print(zip(get_word_counts(test_case, results), test_case.split()))

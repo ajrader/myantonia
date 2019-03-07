@@ -1,6 +1,7 @@
 import hash_functions
 import pandas as pd
 
+
 def load_names():
     #Last names
     last_names = pd.read_fwf('Names/dist.all.last', header=None, widths=[14,7,7,7])
@@ -32,4 +33,4 @@ def name_positions(text, name_corpus):
 if __name__ == "__main__":
     names = load_names()
     test_case = "William is coming over to Jason's house and they will play Super Smash Bros. Kendall likes to write books. Milk is tasty. Mary likes Jack. We like Long and Hee and Smith and House"
-    print name_positions(test_case)
+    print(name_positions(test_case))
